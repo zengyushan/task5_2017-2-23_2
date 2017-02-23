@@ -1,0 +1,148 @@
+html,body{
+    /*去除掉到浏览器边界的空档*/
+    margin: 0px;
+    padding: 0px;
+    font-size:62.5%;/*设置默认字体大小为10px*/
+}
+.clear{
+    clear: both;
+}
+.whole_div{
+    /*background-color: #09BE07;*/
+    position: fixed;
+    /* 高1240*宽720 设置宽度自适应*/
+    width: 100%;
+    height: 0;
+    padding-bottom: 171.52%;/* 1235/720=171.52% */
+}
+.header{
+    /*下面是透明度*/
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    background:#000;
+
+    position: fixed;
+    /*background-image: url(images/header.png);*/
+    /* 设置宽度自适应，高度成比例 */
+    width: 100%;
+    height:0;
+    padding-bottom: 11.8%;/* 85px/720px=11.8% */
+}
+/* return图片 */
+.header img{
+    position: absolute;
+    left: 4.96%;/* 35/720=4.96 */
+    top: 25.88%;/* 字与header的上边22/header的高85=25.88% */
+    width: 2.91%;/* return图的宽度21/720=2.91% */
+
+}
+.header span{
+    margin-left: 40.27%;/* 290/720=40.27% */
+    font-size:5vw;/* 36px/720=5% */
+    color: #ffffff;
+    /* span是行内元素，直接写line-height无效 垂直居中*/
+    display: block;
+    line-height:222.22%;/* line-height设计稿header行高80/字体大小36=222.22% */
+}
+footer{
+    position: fixed;
+    /*top: 89.63%; !* 按钮与顶部距离1107/定义了fixed的父元素高度1235=89.63% *!*/
+    bottom:3.23%;/* 40/1235=3.23 */
+
+    /* 设置宽度自适应，高度成比例 */
+    width: 100%;
+    height:0;
+    padding-bottom: 12.22%;/* 按钮图片高88/720=12.22% */
+
+    /*border:solid red;*/
+
+}
+.leave_message_btn{
+    position: absolute;
+    left:5.13%;  /* 37/720=5.13% */
+
+    background-color:transparent;/* 背景色透明 */
+
+    border: 2px solid #5fc0cd;
+    /*按钮高宽比例控制，因为字与下边距离28px，字与border空出2px，26px/720=3.61%*/
+    padding:3.61%;
+    width:43.05%; /* 310px/720=43.05% */
+
+}
+.leave_message_btn span{
+    /*border:solid;*/
+    vertical-align: center;
+    color: #5fc0cd;
+    font-family: "黑体";
+    font-size: 4.72vw; /* vw是相对与窗口的大小 34px/720=4.72% */
+}
+/* 电话联系按钮 */
+.contact_btn{
+    position: absolute;
+    left: 51.66%; /* 372/720=51.66% */
+    background-color: #5fc0cd;
+    border:2px solid #5fc0cd;
+    /*按钮高宽比例控制，因为字与下边距离28px，字与border空出2px，26px/720=3.61%*/
+    padding:3.61%;
+    width:43.05%; /* 310px/720=43.05% */
+}
+.contact_btn span{
+    vertical-align: center;
+    color: #ffffff;
+    font-family: "黑体";
+    font-size: 4.72vw; /* vw是相对与窗口的大小 34px/720=4.72% */
+}
+/* 按钮边框圆角 */
+.leave_message_btn,.contact_btn{
+    border-radius: 6px;
+    -moz-border-radius: 6px; /* Mozilla浏览器的私有属性 */
+    -webkit-border-radius: 6px; /* Webkit浏览器的私有属性 */
+}
+.content{
+    width: 100%;
+}
+.per_information{
+    background-image: url(images/up_bg_img.png);
+    background-size: cover;
+    width: 100%;
+
+    margin-top: 11.8%;/* 85px/720=11.8% */
+    background-color: #09BE07;
+}
+.per_information img{
+    margin-left: 4.16%;/* 30px/720 */
+    margin-top: 10.97%; /* 79/720=10.97% */
+    margin-bottom: 10.97%; /* 79/720 */
+    width:23.47%; /* 169/720=23.47%*/
+}
+.name_addr{
+    /*border: solid;*/
+    margin-left: 33.19%; /* 239/720=33.19% */
+    font-size: 5vw; /* 36/720=5% */
+    font-family: "黑体";
+    color: #ffffff;
+    /*垂直居中*/
+    display: inline-block;
+    vertical-align: middle;
+}
+.name{
+    font-size:3.33vw; /* 24px/720 */
+    /*border: solid;*/
+}
+.addr{
+    /*border: solid;*/
+    width:100%;
+    font-size:3.33vw; /* 24px/720 */
+}
+.addr img{
+    /*border:solid;*/
+    width: 8%; /* 18/720=2.5% 暂用8%*/
+    /*float: left;*/
+}
+.addr span{
+    /*border:solid;*/
+    font-family: "黑体";
+    color: #ffffff;
+    /*float: left;*/
+
+}
